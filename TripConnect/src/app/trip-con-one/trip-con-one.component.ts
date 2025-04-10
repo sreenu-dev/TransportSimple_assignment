@@ -199,9 +199,16 @@ export class TripConOneComponent implements OnInit {
 
     const svg = svgMain.append("g");
     const zoom = d3.zoom()
+    .on("start", (event) => {
+      svgMain.style("cursor", "grab"); 
+    })
     .on("zoom", (event) => {
+      svgMain.style("cursor", "grabbing");
       svg.attr("transform", event.transform); 
-    });
+    })
+    .on("end", (event) => {
+      svgMain.style("cursor", "default");
+    })
 
     svgMain.call(zoom);
 
