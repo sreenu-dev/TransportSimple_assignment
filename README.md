@@ -25,7 +25,7 @@ Trip Connector is an application designed to simplify transportation management.
     ```
 2. Navigate to the project directory:
     ```bash
-    cd TripConnect
+    cd TransportSimple_assignment/TripConnect
     ```
 3. Install dependencies:
     ```bash
