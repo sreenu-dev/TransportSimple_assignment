@@ -54,7 +54,7 @@ export class TripConOneComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.addDummyTrips();
+    // this.addDummyTrips();
     this.createRouteGraph();
   }
 
