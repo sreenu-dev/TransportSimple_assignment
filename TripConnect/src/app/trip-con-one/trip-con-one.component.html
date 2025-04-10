@@ -1,0 +1,39 @@
+<div class="container mt-3" style="text-align: center;"> 
+    <h2>Trip Connector</h2>
+</div>
+<div class="mt-2">
+    <div class="form-group d-flex flex-column ps-4">
+        <form>
+            <div class="d-flex">
+                <div>
+                    <label for="fromAddress">From</label>
+                    <input type="text" id="fromAddress" class="form-control" placeholder="Enter From Address" [(ngModel)]="fromAddress" name="fromAddress" #fromInput>
+                </div>
+                <div class="ms-3">
+                    <label for="toAddress">To</label>
+                    <input type="text" id="toAddress" class="form-control" placeholder="Enter To Address" [(ngModel)]="toAddress" name="toAddress">
+                </div>
+                <div class="mt-4">
+                    <input type="submit" class="btn btn-primary ms-5" (click)="addRoute()">
+                </div>
+                <div class="mt-4">
+                    <button type="button" class="btn btn-secondary ms-3" (click)="clearRoute()">Clear</button>
+                </div>
+            </div>
+        </form>
+        
+
+        <!-- <input type="range" max="200" min="-200" step="1" [(ngModel)]="controls.controlX1" (input)="createRouteGraph()"> = {{controls.controlX1}} = "ControlX1"
+        <input type="range" max="200" min="-200" step="1" [(ngModel)]="controls.controlX2" (input)="createRouteGraph()"> = {{controls.controlX2}} = "ControlX2"
+        <input type="range" max="200" min="-200" step="1" [(ngModel)]="controls.controlY1" (input)="createRouteGraph()"> = {{controls.controlY1}} = "ControlY1"
+        <input type="range" max="200" min="-200" step="1" [(ngModel)]="controls.controlY2" (input)="createRouteGraph()"> = {{controls.controlY2}} = "ControlY2" -->
+    </div>
+</div>
+
+<div id="tooltip" style="position: absolute;display: none;background: #fff; border: 1px solid #ccc; padding: 5px; border-radius: 5px; pointer-events: none; z-index: 1000;"></div>
+
+<div id="tripOne" class="p-4">
+</div>
+<div *ngIf="trips.length>0" class="p-4">
+    <span style="color: red;">*</span><span>Use Mouse left button to drag and mouse wheel to zoom</span>
+</div>
