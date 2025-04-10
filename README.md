@@ -7,7 +7,6 @@
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 Trip Connector is an application designed to simplify transportation management. This project is part of an assignment to demonstrate the implementation of key features and functionalities.
@@ -19,9 +18,6 @@ Trip Connector is an application designed to simplify transportation management.
 - [ ] Feature 4: Tooltip is added to each circle for ease of use
 - [ ] Feature 5: Drag and Drop functionality is added to zoom and drag the trip details
 
-## Additional Features for Future
-- [ ] Feature 1: Can add a range to change the circle size
-
 ## Installation
 1. Clone the repository:
     ```bash
@@ -29,7 +25,7 @@ Trip Connector is an application designed to simplify transportation management.
     ```
 2. Navigate to the project directory:
     ```bash
-    cd TransportSimple_assignment
+    cd TripConnect
     ```
 3. Install dependencies:
     ```bash
@@ -50,6 +46,3 @@ Trip Connector is an application designed to simplify transportation management.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
